@@ -1,7 +1,7 @@
-var strNumber="0123456789";
-var strSpecial="!@#$%^&*()_-+=;:.?/";
-var strUpper="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var strLower="abcdefghijklmnopqrstuvwxyz";
+var strNumber="";
+var strSpecial="";
+var strUpper="";
+var strLower="";
 var strCharType="";
 
 var iLength = prompt("Enter password length (must be between 8 and 128 characters:");
@@ -14,17 +14,17 @@ if (answer === true) {
 
 answer = confirm("Do you want to include numeric characters?");
 if (answer === true) {
-    strCharType = 
+    strNumber="0123456789";
 };
 
 answer = confirm("Do you want to include lowercase characters?");
 if (answer === true) {
-    strCharType =
+    var strLower="abcdefghijklmnopqrstuvwxyz";
 };
 
 answer = confirm("Do you want to include uppercase characters?");
 if (answer === true) {
-    strCharType = 
+    var strUpper="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 };
 
 
