@@ -3,7 +3,6 @@ var strSpecial="";
 var strUpper="";
 var strLower="";
 var strCharType="";
-var value=true;
 
 var iLength = prompt("Enter password length (must be between 8 and 128 characters:");
 alert(iLength);
@@ -30,8 +29,4 @@ while (strCharType.length === 0) {
     };
 
     strCharType=strSpecial.concat(strNumber, strLower, strUpper);
-
-    if (strCharType.length > 0) {
-        value === false;
-    };
 };
