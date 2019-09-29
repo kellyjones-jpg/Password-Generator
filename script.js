@@ -35,7 +35,7 @@ while (strCharType.length === 0) {
 function generatePassword(iPswdLength){
     temp="";
     for (i=0;i<iPswdLength;i++) {
-    temp+=keylist.charAt(Math.floor(Math.random()*keylist.length))
+    temp+=strCharType.charAt(Math.floor(Math.random()*strCharType.length))
     return temp
     };
     };
