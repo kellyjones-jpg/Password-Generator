@@ -8,11 +8,14 @@ var iLength = prompt("Enter password length (must be between 8 and 128 character
 alert(iLength);
 
 var type = confirm("Do you want to include special characters?");
+if (type === true) {
+    strCharType = 
+} else {
+
+}
 
 var numeric = confirm("Do you want to include numeric characters?");
-
 var lowercase = confirm("Do you want to include lowercase characters?");
-
 var uppercase = confirm("Do you want to include uppercase characters?");
 
 
