@@ -8,7 +8,7 @@ var value=true;
 var iLength = prompt("Enter password length (must be between 8 and 128 characters:");
 alert(iLength);
 
-while (strCharType.length == 0) {
+while (strCharType.length === 0) {
     var answer = confirm("Do you want to include special characters?");
     if (answer === true) {
         strSpecial="!@#$%^&*()_-+=;:.?/"
