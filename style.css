@@ -10,3 +10,8 @@
 .txtarea {
     text-align: center;
 }
+
+button {
+    margin-right: 5%;
+    margin-left: 5%;
+}
