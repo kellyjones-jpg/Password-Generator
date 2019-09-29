@@ -7,24 +7,24 @@ var strCharType="";
 var iLength = prompt("Enter password length (must be between 8 and 128 characters:");
 alert(iLength);
 
-var type = confirm("Do you want to include special characters?");
-if (type === true) {
-    strCharType = 
-}
+var answer = confirm("Do you want to include special characters?");
+if (answer === true) {
+    strSpecial="!@#$%^&*()_-+=;:.?/"
+};
 
-var numeric = confirm("Do you want to include numeric characters?");
-if (type === true) {
+answer = confirm("Do you want to include numeric characters?");
+if (answer === true) {
     strCharType = 
-}
+};
 
-var lowercase = confirm("Do you want to include lowercase characters?");
-if (type === true) {
+answer = confirm("Do you want to include lowercase characters?");
+if (answer === true) {
     strCharType =
-}
+};
 
-var uppercase = confirm("Do you want to include uppercase characters?");
-if (type === true) {
+answer = confirm("Do you want to include uppercase characters?");
+if (answer === true) {
     strCharType = 
-}
+};
 
 
