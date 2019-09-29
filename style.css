@@ -2,4 +2,11 @@
     margin-top: 10%;
     margin-right: 20%;
     margin-left: 20%;
+    text-align: center;
+    border: solid;
+    border-color: gray;
+}
+
+.txtarea {
+    text-align: center;
 }
