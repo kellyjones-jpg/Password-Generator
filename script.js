@@ -7,9 +7,4 @@ var length = prompt("Enter password length (must be between 8 and 128 characters
 alert(length);
 
 var type = window.confirm("Character types?")
-if (type === true) {
-    return 
-}
-else {
 
-}
