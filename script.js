@@ -10,12 +10,21 @@ alert(iLength);
 var type = confirm("Do you want to include special characters?");
 if (type === true) {
     strCharType = 
-} else {
-
 }
 
 var numeric = confirm("Do you want to include numeric characters?");
+if (type === true) {
+    strCharType = 
+}
+
 var lowercase = confirm("Do you want to include lowercase characters?");
+if (type === true) {
+    strCharType =
+}
+
 var uppercase = confirm("Do you want to include uppercase characters?");
+if (type === true) {
+    strCharType = 
+}
 
 
