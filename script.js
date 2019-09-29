@@ -2,11 +2,11 @@ var strNumber="";
 var strSpecial="";
 var strUpper="";
 var strLower="";
-var strCharType="";
 
 var iLength = prompt("Enter password length (must be between 8 and 128 characters:");
 alert(iLength);
 
+while (strCharType === "") {
 var answer = confirm("Do you want to include special characters?");
 if (answer === true) {
     strSpecial="!@#$%^&*()_-+=;:.?/"
@@ -27,4 +27,5 @@ if (answer === true) {
     var strUpper="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 };
 
-
+var strCharType=strSpecial.concat(strNumber, strLower, strUpper);
+}
