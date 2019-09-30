@@ -62,4 +62,4 @@ function copyPassword()
     copyText.setSelectionRange(0, 128);
     document.execCommand("copy");
     alert("Copied password to clipboard.");
-}
+};
