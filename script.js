@@ -6,11 +6,7 @@ var strCharType = "";
 var temp = "";
 
 // Get password length
-//var x = prompt("Enter password length (must be between 8 and 128 characters):");
-do
-{
-var x = parseInt(window.prompt("Please enter a number from 8 to 128", ""), 10);
-}while(isNaN(selection) || selection > 128 || selection < 8);
+var x = prompt("Enter password length (must be between 8 and 128 characters):");
 
 // Select character types to use in password
 while (strCharType.length === 0) 
