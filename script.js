@@ -6,7 +6,7 @@ var strCharType = "";
 var temp = "";
 
 // Get password length
-var iPswdLength = prompt("Enter password length (must be between 8 and 128 characters):");
+var x = prompt("Enter password length (must be between 8 and 128 characters):");
 
 // Select character types to use in password
 while (strCharType.length === 0) 
@@ -51,5 +51,5 @@ function generatePassword(iPswdLength)
     {
         temp += strCharType.charAt(Math.floor(Math.random() * strCharType.length))
     };
-    return temp
+    document.getElementById("btnGenerate").innerHTML = temp;
 };
