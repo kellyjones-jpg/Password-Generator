@@ -58,6 +58,7 @@ function generatePassword(iPswdLength)
 function copyPassword()
 {
     var copyText = temp;
+    copyText.select();
     copyText.setSelectionRange(0, 128);
     document.execCommand("copy");
     alert("Copied password to clipboard.");
