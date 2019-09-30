@@ -6,7 +6,10 @@ var strCharType = "";
 var temp = "";
 
 // Get password length
+while (x < 8 || x > 128)
+{
 var x = prompt("Enter password length (must be between 8 and 128 characters):");
+};
 
 // Select character types to use in password
 while (strCharType.length === 0) 
