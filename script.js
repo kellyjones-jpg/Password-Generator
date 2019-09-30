@@ -53,4 +53,4 @@ function generatePassword(iPswdLength)
     };
     return temp
 };
-document.getElementById("password").innerHTML = generatePassword(8);
+document.getElementById("password").innerHTML = generatePassword(iPswdLength);
