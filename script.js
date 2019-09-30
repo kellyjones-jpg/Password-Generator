@@ -53,4 +53,3 @@ function generatePassword(iPswdLength)
     };
     return temp
 };
-document.getElementById("password").innerHTML = generatePassword(iPswdLength);
