@@ -3,13 +3,12 @@ var strSpecial = "";
 var strUpper = "";
 var strLower = "";
 var strCharType = "";
-var temp = "";
-var x = 0;
+var iLength = 0;
 
 // Get password length
-while (x < 8 || x > 128)
+while (iLength < 8 || iLength > 128)
 {
-x = prompt("Enter password length (must be between 8 and 128 characters):");
+    iLength = prompt("Enter password length (must be between 8 and 128 characters):");
 };
 
 // Select character types to use in password
@@ -50,7 +49,7 @@ while (strCharType.length === 0)
 // Generate the password
 function generatePassword(iPswdLength) 
 {
-    temp = "";
+    var temp = "";
     for (i = 0; i < iPswdLength; i++) 
     {
         temp += strCharType.charAt(Math.floor(Math.random() * strCharType.length))
