@@ -5,10 +5,10 @@ var strLower = "";
 var strCharType = "";
 var temp = "";
 
-// Gets password length
+// Get password length
 var iPswdLength = prompt("Enter password length (must be between 8 and 128 characters):");
 
-// Selects character types to use in password
+// Select character types to use in password
 while (strCharType.length === 0) 
 {
     var answer = confirm("Do you want to include special characters?");
@@ -43,7 +43,7 @@ while (strCharType.length === 0)
     };
 };
 
-// Generates the password
+// Generate the password
 function generatePassword(iPswdLength) 
 {
     temp = "";
@@ -53,3 +53,4 @@ function generatePassword(iPswdLength)
     };
     return temp
 };
+document.getElementById("password").innerHTML = generatePassword(8);
