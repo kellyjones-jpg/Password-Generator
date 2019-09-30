@@ -51,5 +51,5 @@ function generatePassword(iPswdLength)
     {
         temp += strCharType.charAt(Math.floor(Math.random() * strCharType.length))
     };
-    document.getElementById("btnGenerate").innerHTML = temp;
+    document.getElementById("password").innerHTML = temp;
 };
