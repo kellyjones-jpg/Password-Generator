@@ -34,7 +34,6 @@ while (strCharType.length === 0) {
 
     strCharType = strSpecial.concat(strNumber, strLower, strUpper);
 
-    // "if your string character type . length = 0, put confirm saying'must select at least one character type'"
     if (strCharType.length === 0) {
         alert("You must select at least one character type.")
     };
