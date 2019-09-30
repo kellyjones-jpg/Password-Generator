@@ -53,3 +53,12 @@ function generatePassword(iPswdLength)
     };
     document.getElementById("password").innerHTML = temp;
 };
+
+// Copy to clipboard
+function copyPassword()
+{
+    var copyText = temp;
+    copyText.setSelectionRange(0, 128);
+    document.execCommand("copy");
+    alert("Copied password to clipboard.");
+}
