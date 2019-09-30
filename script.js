@@ -7,7 +7,8 @@ var temp = "";
 
 var iPswdLength = prompt("Enter password length (must be between 8 and 128 characters):");
 
-while (strCharType.length === 0) {
+while (strCharType.length === 0) 
+{
     var answer = confirm("Do you want to include special characters?");
     if (answer === true) 
     {
@@ -34,15 +35,18 @@ while (strCharType.length === 0) {
 
     strCharType = strSpecial.concat(strNumber, strLower, strUpper);
 
-    if (strCharType.length === 0) {
+    if (strCharType.length === 0) 
+    {
         alert("You must select at least one character type.")
     };
 };
 
-function generatePassword(iPswdLength) {
+function generatePassword(iPswdLength) 
+{
     temp = "";
-    for (i = 0; i < iPswdLength; i++) {
+    for (i = 0; i < iPswdLength; i++) 
+    {
         temp += strCharType.charAt(Math.floor(Math.random() * strCharType.length))
-            };
-            return temp
+    };
+    return temp
 };
